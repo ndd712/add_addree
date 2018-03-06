@@ -1,0 +1,92 @@
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color:#f6f6f6;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color:#353535;
+  position: relative;
+} 
+.info{
+  background-color: #fff;
+}
+.item{
+  height:90rpx;
+  align-items: center;
+  display:flex;
+  margin-left:30rpx;
+  border-bottom:1rpx solid #eee;
+}
+
+input placeholder{
+  color:red;
+}
+
+.remind{
+  padding-top: 6rpx;
+  color:#e64340;
+  font-size:20rpx;
+}
+.save{
+  width:92%;
+  margin-top:30rpx;
+  background-color: #FFC800;
+  color:#fff;
+}
+.right{
+  padding-left: 30rpx;
+  width:70%;
+  display:flex;
+}
+input{
+  width:100%;
+}
+.right image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left:400rpx;
+}
+/* 复制默认值 */
+
+    .bottom-sec{
+    padding:0 34rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #e5e5e5;
+    border-top: 1rpx solid #e5e5e5;
+    background: white;
+}
+.input-wrapper{
+    height: 116rpx;
+    padding:0 34rpx;
+    box-sizing: border-box;
+    line-height: 116rpx;
+    font-size: 30rpx;
+    border-bottom: 1rpx solid #f2f2f2;
+}
+.check-box{
+    position: relative;
+    padding-left: 50rpx;
+}
+.check-box:before, .active:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.active:after{
+    left: 8rpx;
+    width: 12rpx;
+    height: 12rpx;
+    background-color: #2fa7e0;
+    border-radius: 50%;
+}
+.check-box:before{
+    left: 0;
+    width: 24rpx;
+    height: 24rpx;
+    border: 1px solid #2fa7e0;
+    border-radius: 50%;
+}
+.bottom-sec .input-wrapper{
+    padding: 0;
+}

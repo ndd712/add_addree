@@ -1,0 +1,29 @@
+<!--pages/chooseAddre/chooseAddre.wxml-->
+<view class="item" >
+  <image mode="widthFix" src="http://www.lrmnd.top//qhbs/images/person/addree/uncheck.png" style="height: 23px;">
+  </image>
+    <view class="info">
+      <text>收货人：小高，13419980011</text>
+      <text>收货地址：郑州市金水区商务外环</text>
+      </view>
+      <view class="modify">
+        <text> 编辑</text>
+      </view>
+</view>  
+        <view class="item" wx:for="{{list}}" bindtap="toCleanOrder" data-index="{{item.index}}" data-id="{{item.id}}" data-name="{{item.name}}" data-tel="{{item.tel}}" data-addre="{{item.addre}}" data-image="{{item.image}}" data-addrevalue="{{item.addrevalue}}"
+          data-door="{{item.door}}">
+          <image src="{{item.image}}" mode="widthFix" />
+          <view class="info">
+
+            <text>收货人：{{item.name}}，{{item.tel}}</text>
+
+            <text>收货地址：{{item.addre}}</text>
+          </view>
+          <view class="modify" bindtap="toModifyAddre" data-index="{{item.index}}" data-id="{{item.id}}" data-name="{{item.name}}" data-tel="{{item.tel}}" data-addre="{{item.addre}}" data-image="{{item.image}}" data-addrevalue="{{item.addrevalue}}" data-door="{{item.door}}">
+            <text>编辑</text>
+          </view>
+        </view>
+
+<view class="add" bindtap="addAddre">
+  <button>增加收货地址</button>
+</view>

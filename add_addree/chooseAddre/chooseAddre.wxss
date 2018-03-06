@@ -1,0 +1,54 @@
+/* pages/chooseAddre/chooseAddre.wxss */
+page{
+  display: block;  
+  min-height: 100%;  
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color:#353535;
+  justify-content: center;
+}
+.item{
+  background-color: #fff;
+  border-bottom:1rpx solid #e0e0e0;
+  display: flex;
+  padding:20rpx;
+}
+.info{
+  font-size:27rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:85%;
+}
+.item image{
+  width:50rpx;
+  padding-top:15rpx;
+  margin:0 15rpx;
+}
+.add{
+  width:90%;  
+  background-color:#fff;
+  position: absolute;
+  bottom: 0;
+  padding:15rpx 15rpx 30rpx 40rpx;
+  justify-content: center;
+}
+.add button{
+font-size: 36rpx;
+text-align: center;
+color:#feba48;
+background-color: #fff;
+border:3rpx solid #f7b842;
+} 
+
+.modify text{
+  border: 1px solid #d33219;
+  height: 45rpx;
+  line-height: 45rpx;
+  width: 73rpx;
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  color: #d33219;
+  margin-top: 20rpx;
+}
